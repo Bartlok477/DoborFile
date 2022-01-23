@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Dobor.exe" version="1.0.0.11" publicKeyToken="1937efda65a82317" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Dobor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Dobor.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opcje manifestu kontroli konta użytkownika
+          Jeśli chcesz zmienić poziom kontroli konta użytkownika systemu Windows, zastąp węzeł 
+          requestedExecutionLevel jednym z następujących.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Jeśli chcesz użyć wirtualizacji plików i rejestru do celów zgodności wstecznej, 
+         usuń węzeł requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dobor.exe" size="857056">
+      <assemblyIdentity name="Dobor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tCqfndl4K4UHX/TRa9sBkjg1gfdDF3Bkm4FEcCPGEZ8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Dobor.exe.config" size="195">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WrHrnSEQJ+WZUSmJ3eIkU9hI7zXAYz3FINPIB5dv9nA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-VLB5QS4\bartl" issuerKeyHash="3fe4ccdcaa6b26404f057d341cdb565040bd0b21" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PctmQ8cafYQMogIQ4sL2M1Uhpwvb/0KBMN3q6Y7TaMI=</DigestValue></Reference></SignedInfo><SignatureValue>biJhXd3bX6Cqn9jDCCnm0kcbcqWKalO2FHjKtH9LSwNpJsrlBS65uLG3RuqJZDpoZmwW0u0mBXthWQ151lJQudM9PNBc15igkcuwCs9Jo8VQ9J4AOgEQEwkNDWtatGnjM+elR+L2uNXWS7qyDBDq9beE5OsC/V8FIdTkYoUwo/E=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wZouYdpqob2Icsx2OWeaKr8/KyIJL/EnU+Vs0PoRLVDhvOGuvQOqygDnuyp7dgo7AHKqcsSqlfmgJp/H6C9JDeEWlI77PsUDnqo6YXoG363QleYFQbDnb3/ck7iigulPZATQ7RorPiJRaMZAwNY3aJ874CinyXFHkVXnirOYI+E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c268d38ee9eadd308142ffdb0ba7215533f6c2e21002a20c847d1ac74366cb3d" Description="" Url=""><as:assemblyIdentity name="Dobor.exe" version="1.0.0.11" publicKeyToken="1937efda65a82317" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-VLB5QS4\bartl</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>q2EnHe8ZTY3YVBNfy3kTGSBWpM1+Z8xDtx5Qq7UiIK4=</DigestValue></Reference></SignedInfo><SignatureValue>kHf/ep8WQuUs0dCjpHJGVaKjTsRgVVjk6YRLSGL5pO/1p1kG3k/ecydo6x/0woF8NA5aeIggyeuMID9L+Nh4wH13ymUjA7goxnFOU6i9IRLMIeEaHLrg/bVesaUd4EC+73QbmGfG7c5KmQkaOP3t5niL6r4EsH0VWJydNdScacE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wZouYdpqob2Icsx2OWeaKr8/KyIJL/EnU+Vs0PoRLVDhvOGuvQOqygDnuyp7dgo7AHKqcsSqlfmgJp/H6C9JDeEWlI77PsUDnqo6YXoG363QleYFQbDnb3/ck7iigulPZATQ7RorPiJRaMZAwNY3aJ874CinyXFHkVXnirOYI+E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQGiiqo5ntpbBNkhTEJtSD4TANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFYATABCADUAUQBTADQAXABiAGEAcgB0AGwwHhcNMjIwMTE3MjI1NTE0WhcNMjMwMTE4MDQ1NTE0WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFYATABCADUAUQBTADQAXABiAGEAcgB0AGwwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMGaLmHaaqG9iHLMdjlnmiq/PysiCS/xJ1PlbND6ES1Q4bzhrr0DqsoA57sqe3YKOwByqnLEqpX5oCafx+gvSQ3hFpSO+z7FA56qOmF6Bt+t0JXmBUGw529/3JO4ooLpT2QE0O0aKz4iUWjGQMDWN2ifO+Aop8lxR5FV54qzmCPhAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAV1QJHtEzzriHSViOfx9ZpqxZ6ozyXPWig9Pa2Mg3O3dx8O47Ws++8GM36Uzj79ZZeUdGc4qCzV9W/Hh+qtVsrzmfbSwtHZJpk3+htJpJgNEVeufm9V2pMssCvCRVlhNDyvJQuF+huzmXqx/ZxSOXhS7uLLzdfrWzo8eT5gFFuRc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
