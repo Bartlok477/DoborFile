@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Dobor.exe" version="2.0.0.0" publicKeyToken="1937efda65a82317" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Dobor.exe" version="2.0.0.0" publicKeyToken="1937efda65a82317" language="pl-PL" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Dobor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -9,22 +9,34 @@
   <trustInfo>
     <security>
       <applicationRequestMinimum>
-        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" ID="Custom" SameSite="site">
+          <IPermission Read="USERNAME" version="1" class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+          <IPermission version="1" class="System.Security.Permissions.FileDialogPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+          <IPermission version="1" Permanent="True" Expiry="9223372036854775807" UserQuota="9223372036854775807" Allowed="AssemblyIsolationByUser" class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+          <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="ReflectionEmit, RestrictedMemberAccess" />
+          <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Assertion, Execution, BindingRedirects" />
+          <IPermission version="1" class="System.Security.Permissions.UIPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+          <IPermission version="1" class="System.Drawing.Printing.PrintingPermission, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Level="DefaultPrinting" />
+          <IPermission version="1" class="System.Security.Permissions.MediaPermission, WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Audio="SafeAudio" Image="SafeImage" Video="SafeVideo" />
+          <IPermission version="1" class="System.Security.Permissions.WebBrowserPermission, WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Level="Safe" />
+          <IPermission version="1" class="System.Net.DnsPermission, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+          <IPermission version="1" class="System.Security.Permissions.TypeDescriptorPermission, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+        </PermissionSet>
         <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
-        <!-- Opcje manifestu Kontroli konta użytkownika
-             Jeśli chcesz zmienić poziom Kontroli konta użytkownika systemu Windows, zastąp 
-             węzeł requestedExecutionLevel jednym z następujących.
+        <!--
+          Opcje manifestu kontroli konta użytkownika
+          Jeśli chcesz zmienić poziom kontroli konta użytkownika systemu Windows, zastąp węzeł 
+          requestedExecutionLevel jednym z następujących.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-            Określenie elementu requestedExecutionLevel spowoduje wyłączenie wirtualizacji plików i rejestru. 
-            Usuń ten element, jeśli aplikacja wymaga wirtualizacji w celu zachowania
-            zgodności z poprzednimi wersjami.
-        -->
+         Jeśli chcesz użyć wirtualizacji plików i rejestru do celów zgodności wstecznej, 
+         usuń węzeł requestedExecutionLevel.
+    -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
     </security>
@@ -71,21 +83,4 @@
       <dsig:DigestValue>WrHrnSEQJ+WZUSmJ3eIkU9hI7zXAYz3FINPIB5dv9nA=</dsig:DigestValue>
     </hash>
   </file>
-  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
-    <application>
-      <!-- Lista wersji systemu Windows, na których ta aplikacja została przetestowana
-           i dla których została zaprojektowana. Odkomentuj odpowiednie elementy, a system Windows
-           automatycznie wybierze najbardziej zgodne środowisko. -->
-      <!-- Windows Vista -->
-      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
-      <!-- Windows 7 -->
-      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
-      <!-- Windows 8 -->
-      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
-      <!-- Windows 8.1 -->
-      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
-      <!-- Windows 10 -->
-      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
-    </application>
-  </compatibility>
-<publisherIdentity name="CN=DESKTOP-VLB5QS4\bartl" issuerKeyHash="3fe4ccdcaa6b26404f057d341cdb565040bd0b21" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>S/jIejkxH30Jp/BU6E1FZ5V4cHm/8nywnmBMvRgISV4=</DigestValue></Reference></SignedInfo><SignatureValue>AaR3FSBEvGbdDfCd7uAtKewAe4cz+5mrvBu0FXOvJyahw3eF3h59lLBllKDi9ATpeW+0HOS+yjpffrWWxbatAOogM8KIyXhDS6Vb1zfSbah4ElbXB6k2i7CrzH2i97Ak91wsfrEHh0HcTBwYcmlNX87DqQ5DjLZr4YCMhla4vMM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wZouYdpqob2Icsx2OWeaKr8/KyIJL/EnU+Vs0PoRLVDhvOGuvQOqygDnuyp7dgo7AHKqcsSqlfmgJp/H6C9JDeEWlI77PsUDnqo6YXoG363QleYFQbDnb3/ck7iigulPZATQ7RorPiJRaMZAwNY3aJ874CinyXFHkVXnirOYI+E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5e490818bd4c609eb07cf2bf7970789567454de854f0a7097d1f31397ac8f84b" Description="" Url=""><as:assemblyIdentity name="Dobor.exe" version="2.0.0.0" publicKeyToken="1937efda65a82317" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-VLB5QS4\bartl</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Q6WB+wfo1yD2KBqENrbBk6IqVJ/wSIQfWnrMTWig29E=</DigestValue></Reference></SignedInfo><SignatureValue>t3GVZHsRt8z+noOitsqoUCWtZchLSMvlkhomHu7or7CdbMrxo4pHWNcPK2MwPpZkJkGLuVH/i3pLmdHqW0z5GM4pgP/JKj0rEN+mwzZqYzOOwl/gYZp2WBEgOmleXZRoaZt5ZOK8yYOqQdmd/TGaXyt+YC07pKIJdfEZZfw5gV4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wZouYdpqob2Icsx2OWeaKr8/KyIJL/EnU+Vs0PoRLVDhvOGuvQOqygDnuyp7dgo7AHKqcsSqlfmgJp/H6C9JDeEWlI77PsUDnqo6YXoG363QleYFQbDnb3/ck7iigulPZATQ7RorPiJRaMZAwNY3aJ874CinyXFHkVXnirOYI+E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQGiiqo5ntpbBNkhTEJtSD4TANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFYATABCADUAUQBTADQAXABiAGEAcgB0AGwwHhcNMjIwMTE3MjI1NTE0WhcNMjMwMTE4MDQ1NTE0WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFYATABCADUAUQBTADQAXABiAGEAcgB0AGwwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMGaLmHaaqG9iHLMdjlnmiq/PysiCS/xJ1PlbND6ES1Q4bzhrr0DqsoA57sqe3YKOwByqnLEqpX5oCafx+gvSQ3hFpSO+z7FA56qOmF6Bt+t0JXmBUGw529/3JO4ooLpT2QE0O0aKz4iUWjGQMDWN2ifO+Aop8lxR5FV54qzmCPhAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAV1QJHtEzzriHSViOfx9ZpqxZ6ozyXPWig9Pa2Mg3O3dx8O47Ws++8GM36Uzj79ZZeUdGc4qCzV9W/Hh+qtVsrzmfbSwtHZJpk3+htJpJgNEVeufm9V2pMssCvCRVlhNDyvJQuF+huzmXqx/ZxSOXhS7uLLzdfrWzo8eT5gFFuRc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=DESKTOP-VLB5QS4\bartl" issuerKeyHash="3fe4ccdcaa6b26404f057d341cdb565040bd0b21" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5/25uxg+7o4UVSWZgoM3yC0T4vpbjmvNKO/rFH9Hnxw=</DigestValue></Reference></SignedInfo><SignatureValue>mW9VUeDYK4oRBN88LVFDv4CM07LB9Xhm6V2uYag2GyO6Gi5CVLEDQeROmEnTRDhoWi3fTRTZ1TB8/WU2IYC6+DcOIqBeY41WS9iwgLBWzmfjpXCrt0+ju0UxvE2w53PfxDlovkMZCInfWOs8+WjPmQ9JEIrKbV3kYzl5P9zqtq0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wZouYdpqob2Icsx2OWeaKr8/KyIJL/EnU+Vs0PoRLVDhvOGuvQOqygDnuyp7dgo7AHKqcsSqlfmgJp/H6C9JDeEWlI77PsUDnqo6YXoG363QleYFQbDnb3/ck7iigulPZATQ7RorPiJRaMZAwNY3aJ874CinyXFHkVXnirOYI+E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1c9f477f14ebef28cd6b8e5bfae2132dc8378382992555148eee3e18bbb9fde7" Description="" Url=""><as:assemblyIdentity name="Dobor.exe" version="2.0.0.0" publicKeyToken="1937efda65a82317" language="pl-PL" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-VLB5QS4\bartl</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>dBmNqrR5/JPc/yujuEb6j6Z9NgO4vlH101LvUVN4pY8=</DigestValue></Reference></SignedInfo><SignatureValue>WFaYxZuc+V883oZ+ph8VFCuf4oN3XQbIMphVtpxmLX99BXec5065k77/S1RQbjqBtv4x3kIzoj/vzQ+/J3nc5i59wweFl/KWqU1yQ5cgAUc7f3PsXho/hPxsJ40FEx1FB+fuHohZ9nDkLaD5J5MP5aCC85UrFhSfPcsPJkz3/dw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wZouYdpqob2Icsx2OWeaKr8/KyIJL/EnU+Vs0PoRLVDhvOGuvQOqygDnuyp7dgo7AHKqcsSqlfmgJp/H6C9JDeEWlI77PsUDnqo6YXoG363QleYFQbDnb3/ck7iigulPZATQ7RorPiJRaMZAwNY3aJ874CinyXFHkVXnirOYI+E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQGiiqo5ntpbBNkhTEJtSD4TANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFYATABCADUAUQBTADQAXABiAGEAcgB0AGwwHhcNMjIwMTE3MjI1NTE0WhcNMjMwMTE4MDQ1NTE0WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFYATABCADUAUQBTADQAXABiAGEAcgB0AGwwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMGaLmHaaqG9iHLMdjlnmiq/PysiCS/xJ1PlbND6ES1Q4bzhrr0DqsoA57sqe3YKOwByqnLEqpX5oCafx+gvSQ3hFpSO+z7FA56qOmF6Bt+t0JXmBUGw529/3JO4ooLpT2QE0O0aKz4iUWjGQMDWN2ifO+Aop8lxR5FV54qzmCPhAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAV1QJHtEzzriHSViOfx9ZpqxZ6ozyXPWig9Pa2Mg3O3dx8O47Ws++8GM36Uzj79ZZeUdGc4qCzV9W/Hh+qtVsrzmfbSwtHZJpk3+htJpJgNEVeufm9V2pMssCvCRVlhNDyvJQuF+huzmXqx/ZxSOXhS7uLLzdfrWzo8eT5gFFuRc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
