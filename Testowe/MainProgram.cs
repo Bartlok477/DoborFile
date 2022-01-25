@@ -74,12 +74,28 @@ namespace Testowe
         }
         public MainProgram()
         {
-            Console.WriteLine(FileName);
+            
+
             InitializeComponent();
             //Test_wartosci_1();
-            Test_wartosci_2();
+            //Test_wartosci_2();
+            InitializeProgram();
             Get_spadek();
 
+        }
+
+        public void InitializeProgram()
+        {
+           
+            
+            p_struktura_fazowa.SelectedIndex = 0;
+            p_typ_zyl.SelectedIndex = 0;
+            p_typ_izolacji.SelectedIndex = 0;
+            p_wartosc_bezpiecznika.SelectedIndex = 0;
+            p_typ_ulozenia.SelectedIndex = 0;
+            typ_tor.Checked = true;
+            typ_norma.Checked = true;
+            p_typ_charakterystyki.SelectedIndex = 0;
         }
 
         public void Main()

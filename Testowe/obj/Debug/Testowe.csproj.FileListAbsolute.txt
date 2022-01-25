@@ -11,12 +11,8 @@ E:\Testy C#\Testowe\Testowe\obj\Debug\Testowe.Pomoc.resources
 E:\Testy C#\Testowe\Testowe\obj\Debug\Testowe.PrivTest.resources
 E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.Properties.Resources.resources
 E:\Testy C#\Testowe\Testowe\bin\Debug\Dobor.exe.config
-E:\Testy C#\Testowe\Testowe\bin\Debug\Dobor.exe.manifest
-E:\Testy C#\Testowe\Testowe\bin\Debug\Dobor.application
 E:\Testy C#\Testowe\Testowe\bin\Debug\Dobor.exe
 E:\Testy C#\Testowe\Testowe\bin\Debug\Dobor.pdb
-E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.exe.manifest
-E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.application
 E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.exe
 E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.pdb
 E:\Testy C#\Testowe\Testowe\bin\Debug\Resources\Ikona.ico
@@ -25,4 +21,8 @@ E:\Testy C#\Testowe\Testowe\bin\Debug\Pomoc.Designer.cs
 E:\Testy C#\Testowe\Testowe\bin\Debug\Dane1.xml
 E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.Fileresources.resources
 E:\Testy C#\Testowe\Testowe\bin\Debug\Fileresources.Designer.cs
+E:\Testy C#\Testowe\Testowe\bin\Debug\Dobor.exe.manifest
+E:\Testy C#\Testowe\Testowe\bin\Debug\Dobor.application
 E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.TrustInfo.xml
+E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.exe.manifest
+E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.application

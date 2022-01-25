@@ -27,7 +27,7 @@ namespace Testowe
         MainProgram da = new MainProgram();
         public RodzajeObcPradowej()
         {
-            Console.WriteLine(FileName);
+            
             InitializeComponent();
             Set_params();
         }
@@ -41,7 +41,7 @@ namespace Testowe
         private void Set_params()
         {
             p_struktura_fazowa.SelectedIndex = 0;
-            p_typ_zyl.SelectedIndex = 1;
+            p_typ_zyl.SelectedIndex = 0;
             p_typ_izolacji.SelectedIndex = 0;
         }
 
@@ -49,13 +49,7 @@ namespace Testowe
         private void GetFromXML()
         {
             DataSet ds = new DataSet();
-
-            //ds.ReadXml(@"E:\Testy C#\Testowe\Testowe\Resources\Dane1.xml");
             ds.ReadXml(FileName);
-
-            
-            
-
             //"E:/Testy C#/Testowe/Testowe/Dane1.xml"
             if (this.str_faz ==0 && this.typ_z==1 && this.typ_iz==0)
             {
