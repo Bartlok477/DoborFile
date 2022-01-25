@@ -54,26 +54,17 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dobor.exe" size="870368">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dobor.exe" size="869856">
       <assemblyIdentity name="Dobor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5EectBqmYW9spYlvbd1zpyd+DAKhykCEYNCDhIBt6JI=</dsig:DigestValue>
+        <dsig:DigestValue>YKRGrIz95X95pTl2JVluaySNxS3JW2vhJ7/B60rmXoI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Dane1.xml" size="12612" writeableType="applicationData">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>j3jXI6HCMk8o6sRactzFfpooNA5h4e6kXgHv5PHdiWg=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="Dobor.exe.config" size="195">
     <hash>
       <dsig:Transforms>

@@ -18,9 +18,7 @@ E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.pdb
 E:\Testy C#\Testowe\Testowe\bin\Debug\Resources\Ikona.ico
 E:\Testy C#\Testowe\Testowe\bin\Debug\RodzajeUlozen.resx
 E:\Testy C#\Testowe\Testowe\bin\Debug\Pomoc.Designer.cs
-E:\Testy C#\Testowe\Testowe\bin\Debug\Dane1.xml
 E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.Fileresources.resources
-E:\Testy C#\Testowe\Testowe\bin\Debug\Fileresources.Designer.cs
 E:\Testy C#\Testowe\Testowe\bin\Debug\Dobor.exe.manifest
 E:\Testy C#\Testowe\Testowe\bin\Debug\Dobor.application
 E:\Testy C#\Testowe\Testowe\obj\Debug\Dobor.TrustInfo.xml
